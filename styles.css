@@ -204,5 +204,42 @@ input[type="submit"]:hover {
 }
 
 
+/*
+@media only screen and (max-width: 1200px) {
+    .Footer {
+        justify-content: space-evenly;
+    }
+}
+*/    
+.Footer {
+    background: #f2f2f28a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    }
 
 
+
+.FooterLeftContainer {
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+}
+
+.CarbonNeturalContainer {
+    order: 2;
+}
+
+.FooterRightContainer {
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 3;
+}
+
+.FooterText {
+    color: #70757a;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+}
