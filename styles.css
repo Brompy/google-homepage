@@ -60,17 +60,15 @@ a:-webkit-any-link {
 
 .AboutButton {
     margin-top: 15px;
-    margin-left: 20px;
     height: 20px;
-    width: 20px;
+    width: 48px;
 }
 
 .StoreButton {
     padding-left: 18px;
     margin-top: 15px;
-    margin-left: 20px;
     height: 20px;
-    width: 20px;
+    width: 61px;
 }
 
 .ImagesButton {
