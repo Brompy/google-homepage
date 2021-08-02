@@ -18,16 +18,19 @@ input {
 
 }
 
+html {
+    height: 100%;
+}
 
-body {
+ body {
     background-color: #fff;
     color: #222;
     font-size: 14pt;
     display: flex;
     flex-direction: column;
-    height: 100%;
     text-align: center;
     min-width: 400px;
+    min-height: 100%;
 }
 
 a {
@@ -196,10 +199,10 @@ input[type="submit"]:hover {
 /* Empty Space */
 
 .EmptySpaceContainer {
-    flex-grow: 1;
-    flex-shrink: 0;
-    display: block;
     height: 25em;
+    display: flex;
+    flex: 1;
+    flex-shrink: 0;
 }
 
 
@@ -213,48 +216,36 @@ input[type="submit"]:hover {
 .Footer {
     display: flex;
     background: #f2f2f2;
-    height: auto;
-    text-align: left;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     padding: 0 20px;
     }
 
 
-
+.BottomBoxes {
+    display: flex;
+    justify-content: space-between;
+}
 .FooterLeftContainer {
-    justify-content: flex-start;
-    height: 30px;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    padding: 0 20px;
-    order: 1;
-    text-align: left;
-    align-items: left;
-    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
 
 }
 
 .CarbonNeturalContainer {
-    flex-wrap: wrap;
-    padding: 0 20px;
-    order: 2;
-    width: 33%;
+    display: flex;
+    padding: 20px;
 }
 
 .FooterRightContainer {
-    justify-content: flex-end;
-    width: 33%;
-    flex-wrap: wrap;
-    padding: 0 20px;
-    height: 20px;
-    order: 3;
+    display: flex;
+    justify-content:space-evenly;
+    width: 300px;
 }
 
 .FooterText {
-    color: #70757a;
-    padding: 15px;
-    white-space: nowrap;
+    display: flex;
 }
 
 .leaf {
@@ -266,5 +257,5 @@ input[type="submit"]:hover {
     white-space: nowrap;
     vertical-align: top;
     text-align: center;
-
+    margin: 5px;
 }
