@@ -10,6 +10,7 @@
     color:#222;
     -webkit-user-select: none;
     user-select: none;
+    overflow: hidden;
 }
 
 input {
@@ -212,10 +213,12 @@ input[type="submit"]:hover {
 }
 */    
 .Footer {
-    background: #f2f2f28a;
     display: flex;
+    background: #f2f2f2;
+    height: auto;
+    text-align: left;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0 20px;
     }
 
@@ -223,23 +226,47 @@ input[type="submit"]:hover {
 
 .FooterLeftContainer {
     justify-content: flex-start;
-    min-width: 30%;
+    height: 30px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding: 0 20px;
     order: 1;
+    text-align: left;
+    align-items: left;
+    width: 33%;
+
 }
 
 .CarbonNeturalContainer {
+    flex-wrap: wrap;
+    padding: 0 20px;
     order: 2;
+    width: 33%;
 }
 
 .FooterRightContainer {
     justify-content: flex-end;
-    min-width: 30%;
+    width: 33%;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    height: 20px;
     order: 3;
 }
 
 .FooterText {
     color: #70757a;
-    display: block;
     padding: 15px;
     white-space: nowrap;
+}
+
+.leaf {
+    height: 14px;
+    margin-right: 6px;
+}
+
+.leaftext {
+    white-space: nowrap;
+    vertical-align: top;
+    text-align: center;
+
 }
